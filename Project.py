@@ -3,7 +3,7 @@ import numpy as np
 import face_recognition
 import os
 from datetime import datetime
-path = 'New folder'
+path = 'Photos'
 images = []
 names = []
 mynames = os.listdir(path)

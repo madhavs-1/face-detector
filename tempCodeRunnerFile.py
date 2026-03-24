@@ -3,7 +3,7 @@ import numpy as np
 import face_recognition
 import os
 from datetime import datetime
-path = 'New folder'
+path = 'Photos'
 images = []
 names = []
 mynames = os.listdir(path)
@@ -28,7 +28,7 @@ def MarkAttendace(name):
         myData = f.readlines()
         nameList = []
         for line in myData:
-            entry = line.split(', ')
+            entry = line.strip().split(',')
             nameList.append(entry[0])
         if name not in nameList:
             now = datetime.now()
